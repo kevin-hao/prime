@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    {% include '_head_css_js.html' %}
+    {% block head_css_js %}{% endblock %}
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        {% include '_left_menu.html' %}
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+
+            <div class="row border-bottom">
+                {% include '_head_bar.html' %}
+            </div>
+            {% block content %}{% endblock %}
+            {% include '_foot.html' %}
+
+        </div>
+    </div>
+    {% include '_foot_css_js.html' %}
+    {% block foot_css_js %}{% endblock %}
+</body>
+
+</html>

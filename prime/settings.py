@@ -25,7 +25,7 @@ SECRET_KEY = '#xy1#b+d^tx!hm2$cvltz3j25hssk4$73xle81(v57flr0^%f-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -85,10 +85,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'prime',
-        'USER': 'prime',
-        'PASSWORD': 'LhZUul67',
-        'HOST': '10.16.8.129',
-        'PORT': 3306,
+        'USER': 'prime_w',
+        'PASSWORD': 't%rAd1',
+        'HOST': '10.16.17.2',
+        'PORT': 3999,
     }
 }
 
