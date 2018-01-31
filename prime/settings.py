@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'prime.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'prime',
-        'USER': 'prime_w',
-        'PASSWORD': 't%rAd1',
-        'HOST': '10.16.17.2',
-        'PORT': 3999,
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': ,
     }
 }
 
