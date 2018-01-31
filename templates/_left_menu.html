@@ -22,16 +22,15 @@
                 <a href=""><i class="fa fa fa-globe"></i> <span class="nav-label">业务管理</span><span
                         class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="">业务列表</a></li>
-                    <li><a href="">添加业务</a></li>
-                    <li><a href="">更新业务</a></li>
+                    <li><a href="{% url 'falcon:listbusiness' %}">业务列表</a></li>
+                    <li><a href="{% url 'falcon:addbusiness' %}">添加业务</a></li>
                 </ul>
             </li>
             <li>
                 <a href="index.html#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">资产管理</span><span
                         class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="">主机列表</a></li>
+                    <li><a href="{% url 'falcon:serverlist' %}">主机列表</a></li>
                     <li><a href="">添加主机</a></li>
                     <li><a href="">更新主机</a>/li>
                 </ul>
